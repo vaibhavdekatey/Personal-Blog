@@ -1,0 +1,54 @@
+<%- include("partials/headerMyBlog.ejs") %>
+
+<div class="posts-btn d-flex justify-content-between">
+  <a href="/" class="nav-link active">
+    <button type="button" class="btn bckbtn mx-auto ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-left  items-center" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+      </svg>
+    </button>
+  </a>
+  <p class="allPosts my-auto">All Posts</p>
+  <div>
+    <button type="button" class="btn col compose">
+      <a href="/compose" class="nav-link active col">Create a New Post</a>
+    </button>
+  </div>
+</div>
+
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 postall">
+
+  <% posts.forEach (post => { %>
+  <div class="col placed">
+    <div class="card ">
+      <img class="backgroundimg" src="assets/texture3.png" width="90%">
+      <div class="card-body d-flex">
+        <h2 class="postTitle featuredTitle "><a href="/myblog/<%= post.id %>"><%= post.title %></a></h2>
+        <p class="card-text Content pt-2"><%= post.content %></p>
+        <div class="d-flex justify-content-between read-more">
+          <a href="/myblog/<%= post.id %>">Read more</a>
+          <small class="text-body-secondary">9 mins</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+  
+  
+
+  
+</div>
+
+
+<div class="borderbtm"></div>
+
+
+<%- include("partials/subscription.ejs") %>
+
+<%- include("partials/contact.ejs") %>
+
+<%- include("partials/footer.ejs") %>
+
+
+

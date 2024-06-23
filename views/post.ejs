@@ -1,0 +1,55 @@
+<%- include("partials/headerPlain.ejs") %>
+
+
+  <div class="p-4 p-md-5 d-flex flex-column justify-content-center text-body-emphasis">
+
+    <div class="borderPost">
+
+      <div class=" MainPostTitle d-flex justify-content-center position-relative backtoPosts"><button type="button"
+          class="btn bckpost "><a href="/myblog" class="nav-link active">Back to Posts</a></button></div>
+      <div class="wholeGrp">
+
+        <img class="backgroundimg" src="/assets/bg-start.jpg" width="70%">
+        <div class=" featuredContent position-relative">
+          <div class="d-flex justify-content-between align-items-center ">
+            <p class="display-4 text-start fw-normal pTitle ">
+              <%= post.title %>
+            </p>
+            <div class="dropdown">
+              <button class="threedot" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/edit/<%= post.id%>">Edit</a></li>
+                <li><form class="dropdown-item threedot" action="/delete/<%= post.id %>" method="POST"><button class="threedot" type="submit">Delete</button></form>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="lh-sm my-3 postContent"><%- post.content.replace(/\n/g, '<br>')%></p>
+
+          <!-- <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary edit"><a class="dropdown-item"
+                href="/edit/<%= post.id%>">Edit</a></button>
+            <form class="dropdown-item" action="/delete/<%= post.id %>" method="POST"><button type="submit"
+                class="btn btn-sm btn-outline-secondary edit">Delete</button></form>
+          </div> -->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="borderbtm"></div>
+
+
+  <%- include("partials/subscription.ejs") %>
+
+    <%- include("partials/contact.ejs") %>
+
+      <%- include("partials/footer.ejs") %>

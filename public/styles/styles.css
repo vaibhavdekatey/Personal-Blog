@@ -1,0 +1,632 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.heading {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 14%;
+    padding-right: 14%;
+
+}
+
+.heading h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Livvic";
+    font-weight: 200;
+    font-size: 140%;
+    letter-spacing: 7px;
+    margin-top: 3%;
+    overflow-wrap: break-word;
+
+}
+
+.heading h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "DM Serif Display", "serif";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 600%;
+    letter-spacing: 15px;
+    margin: 0%;
+    /* font-style: italic; */
+
+    /* margin-top: 2%; */
+}
+
+.container {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-top: 2%;
+    max-width: none;
+
+}
+
+.container .nav-item {
+    font-family: "Livvic";
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-left: 1px solid;
+    width: 150px;
+    text-align: center;
+    --bs-nav-link-color: rgb(0, 0, 0);
+
+}
+
+.home {
+    background-color: black;
+}
+
+.home a {
+    color: white;
+}
+
+.myblog {
+    background-color: black;
+}
+
+.myblog a {
+    color: white;
+}
+
+.aboutMe {
+    background-color: black;
+}
+
+.aboutMe a {
+    color: white;
+}
+
+.contactMe {
+    background-color: black;
+}
+
+.contactMe a {
+    color: white;
+}
+
+
+.about {
+    background-color: black;
+
+}
+
+.about a {
+    color: white;
+}
+
+.bdr {
+    border-right: 1px solid;
+
+}
+
+/* this is for the middle dynamic part */
+.borders {
+    margin: 0% 20% 10% 20%;
+
+}
+
+.headTitle {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Livvic";
+    font-weight: 400;
+    font-size: 120%;
+    letter-spacing: 8px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 1.5%;
+    /* margin-right: 60%; */
+    width: 370px;
+    top: 25px;
+
+}
+
+.featured {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.wholeGrp {
+    border: 1px solid black;
+
+}
+
+.featuredTitle {
+    font-family: "DM Serif Display", "serif";
+    font-size: 31px;
+    /* letter-spacing: 1px; */
+    margin-bottom: 1%;
+
+}
+
+.postContent {
+    font-family: "Lexend Deca";
+    font-size: 20px;
+    font-weight: 300;
+    word-wrap: break-word;
+    margin-bottom: 10%;
+
+}
+
+.featuredContent {
+    padding: 4% 7% 4% 7%;
+    /* top: -100%; */
+    z-index: 1;
+
+}
+
+.continued {
+    font-size: "Lexend Deca";
+    font-size: 15px;
+
+}
+
+.backgroundimg {
+    width: 100%;
+
+}
+
+.Content {
+    font-family: "Livvic";
+    font-size: 15px;
+    font-weight: 300;
+    word-wrap: break-word;
+    margin-bottom: 10%;
+
+}
+
+.posted {
+    border-bottom: 1px solid;
+    margin-top: 2%;
+    max-width: none;
+
+}
+
+/* main posts content */
+
+.shipping {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    position: relative;
+
+}
+
+.pgBottom {
+    border-bottom: 1px solid;
+    max-width: none;
+    margin-top: 5%;
+
+}
+
+/* main blog */
+
+.posts-btn {
+    position: relative;
+    margin: 4vh 14vw 4vh 14vw;
+    padding: 2vh;
+}
+
+.posts-btn svg {
+    padding-left: 2px;
+}
+
+.postall {
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-bottom: 10vh;
+
+}
+
+.postall .btn {
+    border-radius: 0;
+
+}
+
+.placed {
+    padding: 2vh;
+    margin-top: 0;
+
+}
+
+.placed .card {
+    border-radius: 0%;
+    border: 1px black solid;
+    height: 50vh;
+}
+
+.placed .card-body {
+    padding: 3vh 3vh 3vh 3vh;
+    flex-direction: column;
+}
+
+.placed .card-body a {
+    color: black;
+    text-decoration: none;
+}
+
+.placed .card-body a:hover {
+    color: rgb(2, 102, 97);
+    text-decoration: none;
+}
+
+.borderbtm {
+    border-bottom: 1px solid;
+
+}
+
+.read-more {
+    margin-top: auto;
+}
+
+.compose {
+    /* position: fixed;
+    bottom: 1rem;
+    right: 1rem;     */
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+
+}
+
+.compose:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.compose .btn-outline-secondary {
+    margin-top: 10px;
+    font-size: medium;
+
+}
+
+.posts-btn .allPosts {
+    font-family: "DM Serif Display", "serif";
+    font-size: xx-large;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1vh 0vh 1vh 0vh;
+}
+
+
+.bckbtn {
+    /* position: fixed;
+    bottom: 1rem;
+    right: 1rem;     */
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+
+
+}
+
+.bckbtn:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.bckbtn .btn-outline-secondary {
+    margin-top: 10px;
+    font-size: medium;
+
+}
+
+.bckbtn svg {
+    margin-top: 2px;
+}
+
+/* about me */
+
+.AboutPic {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+
+/* Compose Post */
+
+textarea {
+    height: 300px;
+}
+
+.bkButton {
+    margin: 7vh 27vw 1vh 27vw;
+
+}
+
+.composePost {
+    border: 1px black solid;
+    margin: 3vh 27vw 15vh 27vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+.backButton {
+    margin-bottom: 3vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backButton a {
+    flex: 0 0 auto;
+
+}
+
+.CreatePost {
+    flex: 0 0 auto;
+    font-family: "Lexend Deca", "sans serif";
+    font-size: 31px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.composePost a {
+    color: black;
+    text-decoration: none;
+}
+
+.composePost a:hover {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+
+.addpost {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.addpost:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.addpost .btn-outline-secondary {
+    margin-top: 10px;
+    font-size: medium;
+
+}
+
+textarea {
+    margin-bottom: 3vh;
+    border-radius: 0%;
+
+}
+
+label {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-family: "Lexend Deca";
+
+}
+
+/* edit page */
+.backButton svg {
+    padding-left: 2px;
+}
+
+
+/* Post Page */
+.wholeGrp .threedot {
+    border: none;
+    background-color: white;
+}
+
+.pTitle {
+    font-family: "Lexend Deca", "sans serif";
+    font-size: 31px;
+    /* letter-spacing: 1px; */
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+
+.backtoPosts {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+    /* margin: 5vh 0vw 0vh 14vw; */
+    /* margin: 11vh 14vw 10vh 14vw; */
+
+
+}
+
+.borderPost {
+    margin: 0vh 14vw 10vh 14vw;
+}
+
+.btn-group .edit {
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+    margin-right: 10px;
+
+}
+
+.edit:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+.MainPostTitle {
+    color: rgb(0, 0, 0);
+    letter-spacing: 8px;
+    font-family: "Livvic";
+    font-weight: 200;
+    font-size: 220%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 0;
+    margin-right: 50vw;
+    top: 10vh;
+
+}
+
+.bckpost a {
+    text-align: center;
+    font-family: "Livvic";
+    font-weight: 200;
+    font-size: 130%;
+    letter-spacing: 0.3vh;
+
+}
+
+.bckpost {
+    padding: 1vh 5vh 1vh 5vh;
+}
+
+.backtoPosts:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.backtoPosts .btn-outline-secondary {
+    margin-top: 10px;
+    font-size: medium;
+
+}
+
+
+/*contact page */
+.getin {
+    margin: 20vh 11% 20vh 11%;
+    text-align: center;
+
+}
+
+.getin h1 {
+    font-family: "DM Serif Display", "serif";
+    font-size: 500%;
+    color: black;
+
+}
+
+.getin .lead {
+    margin-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.getin .maintxt {
+    font-family: "Lexend Deca";
+    font-size: larger;
+    color: black;
+
+}
+
+.btn {
+    font-family: "DM Serif Display", "serif";
+    color: black;
+
+}
+
+.getin button {
+    font-family: "DM Serif Display", "serif";
+    color: black;
+    font-size: 90%;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.getin .btn {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+
+}
+
+.getin .btn:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.getin .btn-outline-secondary {
+    margin-top: 10px;
+    font-size: medium;
+
+}
+
+/* subcription */
+.subbox {
+    padding: 5% 12% 5% 12%;
+    background-color: rgb(235, 235, 235);
+
+}
+
+.subbox .nevermisstxt {
+    font-family: "DM Serif Display", "serif";
+    font-size: 200%;
+    color: black;
+
+}
+
+.subscription .form-control {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(235, 235, 235);
+    margin-right: 10px;
+
+}
+
+.subscription .btn {
+    border-radius: 0%;
+    margin-left: 10px;
+
+}
+
+.lol {
+    border-bottom: 1px black solid;
+    max-width: none;
+
+}
+
+/* footer */
+footer .text {
+    font-family: 'Lexend Deca';
+    margin-left: 150px;
+    color: rgb(0 0 0) !important;
+
+}
+
+.container .socials {
+    margin-right: 150px;
+
+}
